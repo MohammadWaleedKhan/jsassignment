@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4</title>
+</head>
+<body>
+
+    <h1>Chapter 4</h1>
+    <p id="forbio"></p>
+
+    <h1>Rules For Naming JS Variables</h1>
+
+    <h2 id="point-a"></h2>
+    
+    <p id="point-b"></p>
+    
+    <p id="point-c"></p>
+
+    <p id="point-d"></p>
+
+    <p id="point-e"></p>
+
+    <script>
+
+        let name = "Waleed Khan", myAge = "I am 22 years old", dateofBirth = "5/july/2000";
+
+        document.getElementById("forbio").innerHTML = name + " " + myAge + " " + dateofBirth;
+
+        // ILLEGAL VARIABLE NAME
+
+        // let 4name = "illegal variable"
+
+        // let my Name = "illegal variable"
+
+        // let myName# = "illegal variable"
+
+        // let function = "illegal variable"
+
+        // let NAME = "illegal variable"
+
+        // LEGAL VARIABLE NAME
+
+        let myBio = "legal";
+        
+        let bio = "legal";
+
+        let myBio$ = "legal";
+
+        let MYBio = "legal";
+
+        let $_$ = "legal";
+
+
+        let $_a = "Rules for naming JS variables";
+
+        document.getElementById("point_a").innerHTML = $_a;
+
+        let $_b = " Variable names can only contain number, $ and _.";
+
+        document.getElementById("point_b").innerHTML = $_b;
+
+        let $_c = "c)Variables must begin with a letter, $ or _. For example $name, _name or name";
+
+        document.getElementById("point_c").innerHTML = $_c;
+
+        let $_d = "d) Variable names are case sensitive";
+
+        document.getElementById("point_d").innerHTML = $_d;
+
+        let $_e = "e) Variable names should not be JS Keywords";
+
+        document.getElementById("point_e").innerHTML = $_e;
+
+        /
+
+    </script>
+</body>
+</html>
