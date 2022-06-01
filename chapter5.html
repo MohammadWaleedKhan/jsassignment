@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+</head>
+<body>
+    <!-- QUESTION 1-->
+    <h2>ADDITION :-</h2>
+    <input type="number" id="first-num">
+    <input type="number" id="second-num">
+
+    <button onclick="add()">ADD</button>
+
+    <p id="answer"></p>
+    <!-- QUESTION 1 END-->
+    <hr>
+    <!-- QUESTION 2-->
+    <h2>SUBTRACTION :-</h2>
+    <input type="number" id="third-num">
+    <input type="number" id="fourth-num">
+
+    <button onclick="sub()">Subtraction</button>
+
+    <p id="answer-2"></p>
+
+    <h2>MULTIPLICATION :-</h2>
+    <input type="number" id="fifth-num">
+    <input type="number" id="sixth-num">
+
+    <button onclick="multi()">Multiplication</button>
+
+    <p id="answer-3"></p>
+
+    <h2>DIVISION :-</h2>
+    <input type="number" id="seventh-num">
+    <input type="number" id="eighth-num">
+
+    <button onclick="division()">Division</button>
+
+    <p id="answer-4"></p>
+
+    <h2>MODULUS :-</h2>
+    <input type="number" id="tenth-num">
+    <input type="number" id="ninth-num">
+
+    <button onclick="modulus()">Modulus</button>
+
+    <p id="answer-5"></p>
+    <!-- QUESTION 2 END-->
+    <hr>
+    <!-- QUESTION 4 -->
+
+    <h2>BUY TICKETS</h2>
+
+    <input type="number" id="movie-ticket">
+
+    <button onclick="totalCost()">Buy</button>
+
+    <input id="total">
+    <!-- QUESTION 4 END-->
+    <hr>
+    <!-- QUESTION 5-->
+    <h2>TABLES</h2>
+    ENTER THE NUMBER : <input type="number" id="tables">
+    <button onclick="multiTables()">Print Table</button>
+
+    <div id="table-result"></div>
+
+    <!-- QUESTION 5 END-->
+    <hr>
+    <!-- QUESTION 6-->
+    <h3>Convert Fahreheit into Celsius</h3>
+
+    <input type="number" id="celsius">
+    <button onclick="converttemp()">Convert</button>
+
+    <p id="ctemp"></p>
+
+    <!--  -->
+
+    <h3>Convert Celsius into Fahreheit</h3>
+
+    <input type="number" id="fahrenheit">
+    <button onclick="convertInFahrenheit()">Convert</button>
+
+    <p id="ftemp"></p>
+    <!-- QUESTION 6 END-->
+    <hr>
+    <!-- QUESTION 7-->
+    <h2>Shopping Card</h2>
+
+    <h4>Price Of Item 1</h4>
+    <input type="number" id="price-1">
+    
+    <h4>Quantity Of Item 1</h4>
+    <input type="number" id="quantity-1">
+    
+    <p id="answer-one"></p>
+
+    <h4>Price Of Item 2</h4>
+    <input type="number" id="price-2">
+
+    <h4>Quantity Of Item 2</h4>
+    <input type="number" id="quantity-2">
+
+    <p id="answer-two"></p>
+
+    <h4>Shipping</h4>
+    <input type="number" id="shipping">
+
+    <p id="final-answer"></p>
+
+    <p id="text-line"></p>
+
+    <button onclick="checkOut()">CheckOut</button>
+    <!-- QUESTION 7 END-->
+    <hr>
+    <!-- QUESTION 8-->
+    <h2>Marks Sheet</h2>
+
+    <h4>Enter Obtained Marks</h4>
+    <input type="number" id="marks-obtained">
+
+    <h4>Enter Total Marks</h4>
+    <input type="number" id="total-marks">
+
+    <h4>Percentage</h4>
+    <p id="percentage"></p>
+
+    <BUtton onclick="markSheet()">Result</BUtton>
+    <p id="text-detail"></p>
+    <!-- QUESTION 8 END-->
+    <hr>
+    <!-- QUESTION 9-->
+    <h2>Currency In PKR</h2>
+
+    <h4>Enter Dollar</h4>
+    <input type="number" id="dollars">
+    <p id="dollar-pkr"></p>
+
+    <h4>Enter Saudi Riyals</h4>
+    <input type="number" id="riyal">
+    <p id="riyal-pkr"></p>
+
+    <button onclick="currencyConvert()">Total</button>
+
+    <p id="pkr-detail"></p>
+
+    <!-- QUESTION 9 END-->
+
+    <!-- QUESTION 10-->
+    <h2>Calculation In A Single Expression</h2>
+    <p id="single-exoression"></p>
+
+    <!-- QUESTION 10 END-->
+
+    <!-- QUESTION 11-->
+    <h2>The Age Calculator</h2>
+
+    <input type="number" id="user-input">
+
+    <button onclick="calculateAge()">Age</button>
+
+    <p id="age-result"></p>
+
+    <p id="sec-result"></p>
+
+    <p id="text-result"></p>
+    <!-- QUESTION 11 END-->
+
+    <!-- QUESTION 12 -->
+    <h2>The Geometrizer</h2>
+
+    <h3>CIRCUMFERENCE</h3>
+    Enter the radius <input type="number" id="radius">
+
+    <button onclick="circumFerence()">circumference</button>
+
+    <p id="circumference"></p>
+    <p id="circumference-text"></p>
+
+    <h3>AREA</h3>
+    Enter the radius <input type="number" id="area-radius">
+
+    <button onclick="circleArea()">area</button>
+
+    <p id="area"></p>
+    <p id="area-text"></p>
+
+    <!-- QUESTION 12 END-->
+
+    <!-- QUESTION 13-->
+    <h2>The Lifetime Supply Calculator</h2>
+    Enter Your Fav Snacks <input type="text" id="snack-name">
+    <br>
+    <br>
+    Enter Snack Quantity <input type="number" id="snack-quantity">
+    <br>
+    <br>
+    Enter Your Current Age <input type="number" id="current-age">
+    <br>
+    <br>
+    Enter Maximum Age <input type="number" id="max-age">
+    <br>
+    <br>
+    Estimated Amount Per Day <input type="number" id="estimate">
+    <br>
+    <br>
+    <button onclick="lifeTime()">Estimate</button>
+    <br>
+    <br>
+    <p id="tlsc-result"></p>
+    <p id="tlsc-text"></p>
+    <!-- QUESTION 13 END-->
+
+    <script>
+        // QUESTION 1
+        function add() {
+            let firstNum = Number(document.getElementById("first-num").value);
+            let secondNum = Number(document.getElementById("second-num").value);
+
+            let sum = firstNum + secondNum;
+
+            document.getElementById("answer").innerHTML = sum;
+        }
+        // QUESTION 1 END
+
+        // QUESTION 2
+        function sub() {
+            let thirdNum = Number(document.getElementById("third-num").value);
+            let fourthNum = Number(document.getElementById("fourth-num").value);
+
+            let sub = thirdNum - fourthNum;
+
+            document.getElementById("answer-2").innerHTML = sub;
+        }
+        
+        function multi() {
+            let fifthNum = Number(document.getElementById("fifth-num").value);
+            let sixthNum = Number(document.getElementById("sixth-num").value);
+
+            let multiply = fifthNum * sixthNum;
+
+            document.getElementById("answer-3").innerHTML = multiply;
+        }
+        
+        function division() {
+            let seventhNum = Number(document.getElementById("seventh-num").value);
+            let eighthNum = Number(document.getElementById("eighth-num").value);
+
+            let divide = seventhNum / eighthNum;
+
+            document.getElementById("answer-4").innerHTML = divide;
+        }
+        
+        function modulus() {
+            let ninthNum = Number(document.getElementById("ninth-num").value);
+            let tenthNum = Number(document.getElementById("tenth-num").value);
+
+            let modules = ninthNum % tenthNum;
+
+            document.getElementById("answer-5").innerHTML = modules;
+        }
+        // QUESTION 2 END
+
+
+        // QUESTION 3
+        let num;
+
+        console.log('value after declaring', num);
+
+        num = 5;
+
+        console.log(num);
+
+        num ++;
+
+        console.log(num);
+
+        num = num + 7;
+
+        console.log(num);
+
+        num --;
+
+        console.log(num);
+
+        num = num % 3;
+
+        console.log(num);
+        // QUESTION 3 END
+
+        // QUESTION 4
+        function totalCost() {
+            let ticketPrice = 600
+            let numberOfTickets = Number(document.getElementById("movie-ticket").value)
+
+            let ans = ticketPrice * numberOfTickets
+
+            document.getElementById("total").value = ans
+
+        }
+        // QUESTION 4 END
+
+        // QUESTION 5
+        function multiTables() {
+            let tableNumber ;
+            let result$ = "";
+
+            tableNumber = Number(document.getElementById("tables").value);
+
+            for(let i = 1; i<= 20; i++){
+                result$ = result$ + "<p>"+tableNumber + "x" + i + "=" + tableNumber * i+"</p>"; 
+            }
+
+            document.getElementById("table-result").innerHTML = result$;
+        }
+
+        // QUESTION 5 END
+
+
+        // QUESTION 6
+        function converttemp() {
+            let fahrenheitTemperature = Number(document.getElementById("celsius").value);
+            let convert = (fahrenheitTemperature - 32) * 5 / 9;
+
+            document.getElementById("ctemp").innerHTML = convert + " " + '&deg;' + "C";
+        }
+
+        function convertInFahrenheit() {
+            let celsiusTemperature = Number(document.getElementById("fahrenheit").value);
+            let fahToCel = (celsiusTemperature * 9 / 5) + 32;
+
+            document.getElementById("ftemp").innerHTML = "this is the answer" + " " + fahToCel + " " + '&deg;' + "F";
+        }
+        // QUESTION 6 END
+
+        // QUESTION 7
+        function checkOut() {
+            let priceOne = Number(document.getElementById("price-1").value);
+            let quantityOne = Number(document.getElementById("quantity-1").value);
+            let priceTwo = Number(document.getElementById("price-2").value);
+            let quantityTwo = Number(document.getElementById("quantity-2").value);
+            let shipping = Number(document.getElementById("shipping").value);
+
+            let multiplyOne = priceOne * quantityOne;
+            let multiplyTwo = priceTwo * quantityTwo;
+            let multiplyThree = multiplyOne + multiplyTwo + shipping;
+
+            document.getElementById("answer-one").innerHTML = multiplyOne;
+            document.getElementById("answer-two").innerHTML = multiplyTwo;
+            document.getElementById("final-answer").innerHTML = multiplyThree;
+            document.getElementById("text-line").innerHTML = `
+            <p>Price of item 1 is ${priceOne}</p>
+            <p>Quantity of item 1 is ${quantityOne}</p>
+            <p>Price of item 2 is ${priceTwo}</p>
+            <p>Quantity of item 2 is ${quantityTwo}</p>
+            <p>Shipping Charges ${shipping}</p>
+            <p>Total Cost of your order is ${multiplyThree}</p>
+            
+            `;
+        }
+
+        // QUESTION 7 END
+
+        // QUESTION 8
+        function markSheet() {
+            let marksObtained = Number(document.getElementById("marks-obtained").value);
+            let totalMarks = Number(document.getElementById("total-marks").value);
+            let result = marksObtained / totalMarks;
+            let percentageGet = result * 100;
+
+            document.getElementById("percentage").innerHTML = percentageGet;
+            document.getElementById("text-detail").innerHTML = `
+            <p>Total marks: ${totalMarks}</p>
+            <p>Marks obtained: ${marksObtained}</p>
+            <p>Percentage: ${percentageGet}</p>
+            `;
+        }
+
+        // QUESTION 8 END
+
+        // QUESTION 9
+        function currencyConvert() {
+            let dollarPkr = Number(document.getElementById("dollars").value);
+            let riyalPkr = Number(document.getElementById("riyal").value);
+
+            let totalDollar = dollarPkr * 199.12;
+            let totalRiyal = riyalPkr * 53.09;
+            
+            let totalPkr = totalDollar + totalRiyal;
+
+            document.getElementById("dollar-pkr").innerHTML = totalDollar;
+            document.getElementById("riyal-pkr").innerHTML = totalRiyal;
+            document.getElementById("pkr-detail").innerHTML = `
+            <p>Total Currency in PKR: ${totalPkr}</p>
+            `;
+
+        }
+        // QUESTION 9 END
+
+        // QUESTION 10
+        let someNum = 10;
+        let thenAdd = 5;
+        let multiply = 10;
+        let divide = 2;
+
+        document.getElementById("single-exoression").innerHTML = ((someNum + thenAdd) * multiply) / divide;
+
+        // QUESTION 10 END
+
+        // QUESTION 11
+
+        function calculateAge() {
+            let currentYear = new Date().getFullYear();
+            let birthYear = Number(document.getElementById("user-input").value);
+            
+            let firstAge = currentYear - birthYear;
+            let secAge = firstAge + 1;
+            
+            document.getElementById("age-result").innerHTML = firstAge;
+            document.getElementById("sec-result").innerHTML = secAge;
+            document.getElementById("text-result").innerHTML = `
+            <p>Current Year: ${currentYear}</p>
+            <p>Birth Year: ${birthYear}</p>
+            <p>Your Age is: ${firstAge} or ${secAge} </p>
+            <p>"They are either ${firstAge} or ${secAge} years old".</p>
+            `;
+        }
+        // QUESTION 11 END
+
+        // QUESTION 12
+        function circumFerence() {
+            let radiusInput = Number(document.getElementById("radius").value);
+            let circleFormula = 2 * 3.142 * radiusInput;
+
+            document.getElementById("circumference").innerHTML = circleFormula;
+            document.getElementById("circumference-text").innerHTML = `
+            <p>Radius of a circle: ${radiusInput}</p>
+            <p>The circumference is: ${circleFormula}</p>
+            `;
+        }
+
+        function circleArea() {
+            let areaRadius = Number(document.getElementById("area-radius").value);
+            let areaOfACircle = 3.142 * (areaRadius * areaRadius);
+
+            document.getElementById("area").innerHTML = areaOfACircle;
+            document.getElementById("area-text").innerHTML = `
+            <p>Radius: ${areaRadius}</p>
+            <p>The area is: ${areaOfACircle} </p>
+            `;
+        }
+        
+        // QUESTION 12 END
+
+        // QUESTION 13
+        function lifeTime() {
+            let snackName = Number(document.getElementById("snack-name").value);
+            let snackQuantity = Number(document.getElementById("snack-quantity").value);
+            let currentAge = Number(document.getElementById("current-age").value);
+            let maxAge = Number(document.getElementById("max-age").value);
+            let estimateAge = Number(document.getElementById("estimate").value);
+
+            let currentMaxAge = maxAge - currentAge;
+            let yearInDays = currentMaxAge * 365;
+            let perDay = yearInDays * estimateAge;
+
+            document.getElementById("tlsc-result").innerHTML = perDay;
+            document.getElementById("tlsc-text").innerHTML = `
+            <p> “You will need ${perDay} to last you until the ripe old age of ${maxAge}”</p>
+            `;
+        }
+        // QUESTION 13 END
+    </script>
+</body>
+</html>
